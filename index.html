@@ -4,10 +4,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+
+
+    <style>
+        /* common shared style */
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+        }
+        /*  nav related styles */
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 200px
+        }
+        
+        .btn-primary {
+            border-radius: 5px;
+            background: #FD6E0A;
+            border: 0;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 15px 35px;
+        }
+        
+        .nav-title {
+            color: black;
+            font-size: 45px;
+            font-weight: 800;
+        }
+        
+        .text-primary {
+            color: #FD6E0A;
+        }
+        
+        nav>ul {
+            display: flex;
+            margin-left: 500px;
+        }
+        
+        nav li {
+            list-style: none;
+            margin-right: 50px;
+            align-items: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: rgb(35, 35, 35);
+        }
+        /* header related class */
+        
+        .banner {
+            padding: 30px 30px 0px 140px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .banner-content {
+            max-width: 500px;
+        }
+        
+        .banner-greeting {
+            font-size: 45px;
+            color: #474747;
+            margin-bottom: 0;
+        }
+        
+        .banner-title {
+            font-size: 85px;
+            font-weight: 700;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .pp-pic {
+            width: 500px;
+        }
+        /* main section */
+        
+        .section-title {
+            color: #181818;
+            text-align: center;
+            font-size: 35px;
+            font-size: 700;
+        }
+        
+        .section-description {
+            color: #757575;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        main {
+            max-width: 1140px;
+            margin: 0px auto;
+        }
+        
+        .about {
+            padding: 130px;
+            border-radius: 10px;
+            background: #FFF8F3;
+            margin: 130px 0;
+        }
+        
+        .about-info-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .about-info {
+            text-align: center;
+        }
+    </style>
 </head>
 
+
 <body>
+    <header class="header">
+        <nav>
+            <h3 class="nav-title">Ma<span class="text-primary">r</span>y</h3>
+            <ul class="ul">
+                <li><a href="http://">PortFolio</a></li>
+
+                <li><a href="http://">Blog</a></li>
+
+                <li><button class="btn-primary">Hire Me</button></li>
+
+
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="banner-content">
+                <h3 class="banner-greeting">Hi,I am</h3>
+                <h1 class="banner-title"> Mary Hardy</h1>
+                <p class="banner-description">Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society behaved moments.</p>
+                <button class="btn-primary">Download CV</button>
+                <button class="btn-primary">contact</button>
+            </div>
+            <img class="pp-pic" src="images/hardy.png" alt="image">
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <h3 class="section-title">About Me</h3>
+            <p class="section-description">
+                I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional resulfs while working with me. Delivering work within
+                time and budget which meets clients requirements in our mata.
+            </p>
+            <div class="about-info-container">
+
+                <!-- .about-info*4>h4.info-title+p.info-description -->
+                <div class="about-info">
+                    <h4 class="info-title">Name:</h4>
+                    <p class="info-description">Abdullah AL Maruf</p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">Email:</h4>
+                    <p class="info-description">marufk19982321@gmail.com</p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">Date of birth:</h4>
+                    <p class="info-description">1 Jan,2000</p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">From:</h4>
+                    <p class="info-description">Ramgonj,Luxmipur</p>
+                </div>
+
+
+
+            </div>
+
+        </section>
+    </main>
+    <footer></footer>
 
 </body>
 
